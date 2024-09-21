@@ -5,4 +5,4 @@ A workshop on prompt engineering.
 - [What is a prompt?](https://github.com/mmahyoub/prompt-engineering-workshop/blob/main/Prompts.ipynb)
 - [Crafting Effective Prompts](https://github.com/mmahyoub/prompt-engineering-workshop/blob/main/Crafting_Effective_Prompts.ipynb)
 - [Advanced Prompt Engineering Techniques](https://github.com/mmahyoub/prompt-engineering-workshop/blob/main/Advanced_Prompt_Engineering_Techniques.ipynb)
-- [Practical Application]()
+- [Practical Application](https://github.com/mmahyoub/prompt-engineering-workshop/tree/main/application-example)
