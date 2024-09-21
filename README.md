@@ -1,2 +1,2 @@
-# prompt-engineering-workshop
+# Prompt Eningeering
 A workshop on prompt engineering. 
