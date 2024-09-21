@@ -24,12 +24,7 @@ def main():
 
     pdf = st.file_uploader("Upload your PDF", type="pdf")
     
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
-    
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
+   
 
     if pdf is not None:
         # Get text data
@@ -38,6 +33,13 @@ def main():
         for page in pdf_reader.pages:
             text += page.extract_text()
         
+        if "messages" not in st.session_state:
+            st.session_state.messages = []
+    
+        for message in st.session_state.messages:
+            with st.chat_message(message["role"]):
+                st.markdown(message["content"])
+                
         # Vectorstore
         vs = create_vectorstore(text)
 
@@ -48,7 +50,11 @@ def main():
                 st.markdown(prompt)
             
             with st.chat_message("assistant"):
-                st.markdown(get_response(prompt, vs))
+                resp = get_response(prompt, vs)
+                st.markdown(resp)
+            
+            st.session_state.messages.append({"role": "assistant", "content": resp})
+            
 
 def create_vectorstore(text):
        
