@@ -1,5 +1,5 @@
 # Prompt Engineering
-A workshop on prompt engineering. 
+A workshop on prompt engineering (for college students).
 
 - [What is an LLM?](https://github.com/mmahyoub/prompt-engineering-workshop/blob/main/Introduction.ipynb)
 - [What is a prompt?](https://github.com/mmahyoub/prompt-engineering-workshop/blob/main/Prompts.ipynb)
